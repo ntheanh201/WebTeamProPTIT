@@ -1,0 +1,60 @@
+body {
+    background-image: url("assets/background.jpg");
+}
+
+#header {
+    text-align: center;
+}
+
+#header img {
+    width: 40%;
+}
+
+.wrapper .label {
+    color: red;
+}
+
+.wrapper .content p {
+
+}
+
+.wrapper .content .small-label {
+
+}   
+
+.wrapper .content .table table {
+    margin: auto;
+    width: 70%;
+}
+
+.wrapper .content p {
+    font-size: 18px;
+}
+
+.wrapper .content .table #legend {
+    color: red;
+    text-align: center;
+}
+
+.wrapper .content .table #name {
+    background-color: #00cc66;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.wrapper .content .table #product {
+    background-color: yellow;
+}
+
+.wrapper .content .table table, th, td {
+    border: 1px solid black;
+    height: 50px;
+}
+
+.wrapper .content .table td {
+    background-color: #fff;
+}
+
+.wrapper .content .table #price {
+    text-align: right;
+}

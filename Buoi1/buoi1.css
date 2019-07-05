@@ -1,0 +1,26 @@
+.header{
+    text-align: center;
+}
+
+hr {
+    background-color: pink;
+    height: 3px;
+}
+
+.introduce {
+    text-align: center;   
+}
+
+.introduce img{
+    border: 5px solid pink;
+    width: 600px;
+    height: 600px;
+}
+
+.introduce .action-bar a {
+    color: violet;
+}
+
+.information .label {
+    text-align: center;
+}
