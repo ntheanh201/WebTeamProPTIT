@@ -1,0 +1,44 @@
+header .label {
+    text-align: right;
+    font-size: 150%;
+}
+
+.sidebar {
+    /* position: fixed;
+    width: 150px;
+    top: 1;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1; */
+    background-color: orange;
+    float: left;
+    height: 100%;
+}
+
+.body {
+    height: 500px;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.wrapper .label {
+    color: orange;
+}
+
+.wrapper .content {
+    color: #9b2be0;
+}
+
+.wrapper {
+    margin-left: 160px;
+    border-top: 1px solid orange;
+}
+
+.wrapper .more-information {
+    width: 20%;
+    float: right;
+    background-color: #f5e342;
+    border: 3px solid orange;
+}

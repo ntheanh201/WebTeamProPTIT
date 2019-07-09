@@ -8,7 +8,7 @@
   </head>
   <body>
     <script>
-      (async () => {
+        
         const response = await fetch(
           "https://api.github.com/repos/ntheanh201/WebTeamProPTIT/contents/"
         );
