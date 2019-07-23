@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: white;
+    border: 2px solid green;
+    height: 150px;
+}
+
+.wrapper .container {
+    float: left;
+    width: 300px;
+    color: blueviolet;
+    background-color: #fff;
+    height: 100%;
+}
+
+.wrapper .first-paragraph {
+    padding: 2px;
+}
+
+.wrapper .second-paragraph p {
+    background-color: pink;
+    padding: 10px;
+}
+
