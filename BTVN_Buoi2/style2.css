@@ -1,0 +1,35 @@
+.header {
+
+}
+
+.wrapper {
+
+}
+
+.wrapper .super-feature {
+
+}
+
+.wrapper .introduce {
+
+}
+
+.wrapper .introduce .more-info {
+    display: flex;
+    height: 100px;
+}
+
+.wrapper .introduce .more-info .arrow{
+    width: 33.33%;
+    background-color: pink;
+}
+
+.wrapper .introduce .more-info .image-1 {
+    width: 33.33%;
+    background-color: green;
+}
+
+.wrapper .introduce .more-info .image-2 {
+    width: 33.33%;
+    background-color: violet;
+}
