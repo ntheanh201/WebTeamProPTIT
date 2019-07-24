@@ -1,35 +1,118 @@
-.header {
-
+body {
+  margin: 0;
+  padding: 0;
+  width: 700px;
 }
 
-.wrapper {
+.clear {
+  clear: both;
+}
 
+.header {
+  background-color: #373c3f;
+  height: 50px;
+  padding-top: 1px;
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.header li:hover {
+  background-color: #fff;
 }
 
 .wrapper .super-feature {
-
+  background-color: #0d9db5;
+  height: 400px;
+  width: 700px;
 }
 
-.wrapper .introduce {
-
+.wrapper .super-feature .border {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200px;
+  font-size: 150%;
+  color: #fff;
 }
 
-.wrapper .introduce .more-info {
-    display: flex;
-    height: 100px;
+.wrapper .introduce .content {
+  float: left;
+  background-color: #27212d;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+  width: 550px;
+  color: #fff;
 }
 
-.wrapper .introduce .more-info .arrow{
-    width: 33.33%;
-    background-color: pink;
+.wrapper .introduce .right-arrow {
+  background-color: #bc3184;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+  width: 150px;
+  color: #fff;
 }
 
-.wrapper .introduce .more-info .image-1 {
-    width: 33.33%;
-    background-color: green;
+.wrapper .right-arrow {
+  float: right;
+  font-size: 150%;
+  font-weight: bold;
 }
 
-.wrapper .introduce .more-info .image-2 {
-    width: 33.33%;
-    background-color: violet;
+.wrapper .left-arrow {
+  float: left;
+  color: #fff;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.wrapper .more-info .left-arrow {
+  float: left;
+  background-color: #5a0fa0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+  width: 250px;
+}
+
+.wrapper .more-info .image-1 {
+  float: left;
+  background-color: green;
+  width: 225px;
+  height: 120px;
+}
+
+.wrapper .more-info .image-2 {
+  float: left;
+  background-color: violet;
+  width: 225px;
+  height: 120px;
+}
+
+.wrapper .foot {
+  padding: 45px;
+}
+
+.wrapper .foot .title {
+  color: blue;
+  display: inline;
+  font-weight: bold;
+}
+
+.wrapper .foot .left-para,
+.right-para {
+  float: left;
+  width: 50%;
 }

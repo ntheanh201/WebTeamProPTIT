@@ -1,0 +1,42 @@
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.sidebar img {
+    width: 450px;
+    height: 400px;
+}
+
+.sidebar .wrap .row img {
+    width: 56px;
+    height: 56px;
+}
+
+.clear {
+    clear: both;
+}
+
+.content .intro img{
+    width: 50%;
+}
+
+.content .intro .infor p {
+    width: 50%;
+}
+
+.content .forms .small-form {
+    /* float: left; */
+}
+
+.content .forms .small-form img {
+    width: 200px;
+    height: 150px;
+}
