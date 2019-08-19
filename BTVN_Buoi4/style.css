@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header {
-    /* position: relative; */
+a {
+    text-decoration: none;
 }
 
 .header {
@@ -15,13 +15,23 @@ header {
     z-index: 2;
 }
 
-.container {
-    width: 60%;
+.header-container {
     margin: auto;
     display: flex;
     align-items: center;
     font-weight: 700;
 }
+
+.container {
+    margin: auto;
+    width: 70%;
+}
+
+.container2 {
+    margin: auto;
+    width: 40%;
+}
+
 #menu ul {
     list-style-type: none;
 }
@@ -63,6 +73,10 @@ header {
     padding: 7% 0 3% 0;
 }
 
+.bg-green {
+    background-color: #1abc9c;
+}
+
 #img {
     width: 15%;
     margin: auto;
@@ -90,7 +104,149 @@ header {
     height: .25rem;
 }
 
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-first {
+    color: #fff !important;
+}
+
+.text-secondary {
+    color: #2c3e50 !important;
+}
+
+.bg-color {
+    background-color: #2c3e50 !important;
+}
+
+.portfolio,
+.about,
+.contact,
+.information {
+    padding: 30px 0 30px 0;
+}
+
 i {
     font-size: 2rem;
     margin: 0 1% 0 1%;
+}
+
+.portfolio .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.portfolio .content .sub-content {
+    flex-basis: 33.333%;
+}
+
+.portfolio .content .sub-content-hover {
+    color: #ffffff;
+    position: absolute;
+}
+
+.portfolio .content img {
+    border-radius: 2%;
+    width: 40%;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.about {
+    color: #ffffff;
+    text-align: center;
+}
+
+.about .content {
+    display: flex;
+    text-align: left;
+}
+
+.contact .content input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 2% 0 2% 0;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+footer .information {
+    display: flex;
+}
+
+footer .information * {
+    flex: 1;
+    text-align: center;
+}
+
+footer .information .around-web .icons i {
+    color: #ffffff;
+}
+
+footer .information .around-web .icons .round {
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    background-color: #2c3e50;
+}
+
+footer .copyright {
+    background-color: #1a252f;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 0;
+    color: #ffffff;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #fff;
+}
+
+.btn-primary {
+    border: 1px solid #ffffff;
+    width: 30%;
+    padding: 15px;
+}
+
+.btn-primary h3 {
+    display: inline;
+}
+
+.btn-submit {
+    font-weight: 700;
+    font-size: 20px;
+    width: 10%;
+    height: 60px;
+}
+
+.btn-success {
+    background-color: #1abc9c;
+}
+
+.btn-submit:hover {
+    color: #ffffff;
+    background-color: #28a745;
 }
