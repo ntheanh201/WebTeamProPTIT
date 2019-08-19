@@ -142,7 +142,6 @@ i {
 
 .portfolio .content .sub-content {
     flex-basis: 33.333%;
-    margin: auto;
 
 }
 
@@ -151,9 +150,18 @@ i {
     position: absolute;
 }
 
+.portfolio .content .sub-content:hover {
+    opacity: 0.5 !important;
+    background-color: #1abc9c;
+}
+
 .portfolio .content img {
     border-radius: 2%;
     width: 98%;
+}
+
+.decrease-opacity {
+    opacity: 0.5 !important;
 }
 
 .invisible {
@@ -251,9 +259,9 @@ footer .copyright {
 }
 
 .btn-primary {
-    border: 1px solid #ffffff;
-    width: 30%;
-    padding: 15px;
+    border: 2px solid #ffffff;
+    padding: 2%;
+    width: 35%;
 }
 
 .btn-primary h3 {
