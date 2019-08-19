@@ -23,9 +23,15 @@
 
           <div class="right-side" id="menu">
             <ul>
-              <li id="portfolio"><a href="">PORTFOLIO</a></li>
-              <li id="about"><a href="">ABOUT</a></li>
-              <li id="contact"><a href="">CONTACT</a></li>
+              <li id="portfolio">
+                <a href="#go-to-portfolio">PORTFOLIO</a>
+              </li>
+              <li id="about">
+                <a href="#go-to-about">ABOUT</a>
+              </li>
+              <li id="contact">
+                <a href="#go-to-contact">CONTACT</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -46,7 +52,7 @@
       </div>
       <h3>Graphic Artist - Web Designer - Illustrator</h3>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="go-to-portfolio">
       <div class="container">
         <h2 class="text-secondary">PORTFOLIO</h2>
         <div class="divider-line">
@@ -94,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="about bg-green">
+    <div class="about bg-green" id="go-to-about">
       <div class="container2">
         <h2 class="text-first">ABOUT IT</h2>
         <div class="divider-line">
@@ -123,7 +129,7 @@
         </a>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="go-to-contact">
       <div class="container2">
         <h2 class="text-secondary">CONTACT ME</h2>
         <div class="divider-line">
@@ -136,12 +142,12 @@
             <input type="text" name="name" placeholder="Name" />
             <input type="text" name="email" placeholder="Email Address" />
             <input type="text" name="phone-number" placeholder="Phone Number" />
-            <input
-              class="text-area"
+            <textarea
               type="text"
               name="message"
               placeholder="Message"
-            />
+              aria-invalid="false"
+            ></textarea>
             <br />
             <button class="btn btn-submit btn-success" type="submit">
               Send
@@ -178,7 +184,7 @@
             <h4>ABOUT FREELANCER</h4>
             <p>
               Freelance is a free to use, MIT licensed Bootstrap theme created
-              by Start Bootstrap.
+              by <a href="">Start Bootstrap</a>.
             </p>
           </div>
         </div>
