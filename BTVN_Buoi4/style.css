@@ -15,11 +15,13 @@ a {
     max-width: 1140px !important;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -57,16 +59,20 @@ header .right-side a:hover {
 }
 
 header .left-side {
-  display: inline;
   font-size: 1.5em;
   margin-right: 1rem;
+  width: 30%;
 }
 
 header .right-side {
-  /* width: 70%; */
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 header .right-side ul {
+  width: 300px;
+  justify-content: space-between;
   list-style-type: none;
   display: flex;
   flex-direction: row;
