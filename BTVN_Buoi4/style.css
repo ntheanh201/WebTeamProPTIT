@@ -179,7 +179,7 @@ i {
 #content-4:hover .sub-content-hover,
 #content-5:hover .sub-content-hover,
 #content-6:hover .sub-content-hover {
-  /* display: block; */
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
