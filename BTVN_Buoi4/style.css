@@ -170,26 +170,40 @@ i {
 
 .portfolio .content .sub-content {
   flex-basis: 33.333%;
+  position: relative;
 }
 
-.portfolio .content #content-1,
-#content-2,
-#content-3 {
-  display: none;
-}
-
-.portfolio .content:hover + #content-1 {
-  display: block;
+#content-1:hover .sub-content-hover,
+#content-2:hover .sub-content-hover,
+#content-3:hover .sub-content-hover,
+#content-4:hover .sub-content-hover,
+#content-5:hover .sub-content-hover,
+#content-6:hover .sub-content-hover {
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 0.5rem;
+  height: 99% !important;
+  width: 99% !important;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 188, 156, 0.9);
 }
 
 .portfolio .content .sub-content-hover {
-  color: #ffffff;
-  position: absolute;
+  display: none;
+}
+
+.portfolio .content .sub-content-hover i {
+  text-align: center !important;
+  cursor: pointer;
 }
 
 .portfolio .content img {
   border-radius: 0.5rem;
-  width: 98%;
+  width: 99%;
 }
 
 .about {
