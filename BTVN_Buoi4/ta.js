@@ -59,12 +59,12 @@ const shuffle = array => {
   return array;
 };
 
-const day = ['29/08', '30/08', '31/08'];
+const day = ['29/08', '30/08', '31/08', '28/08'];
 i = 0;
 ans = [];
 while (shuffle(list).length) {
-  x = shuffle(list).splice(0, 13);
-  ans.push([`12h ngày ${day[i++]}: `, x]);
+  x = shuffle(list).splice(0, 10);
+  ans.push([`Ngày ${day[i++]}: `, x]);
 }
 
 console.log(ans);
