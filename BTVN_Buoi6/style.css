@@ -28,12 +28,8 @@ p {
   color: #868e96;
 }
 
-h3 {
-    margin-top: -0.5%;
-}
-
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 0.4px solid rgba(0, 0, 0, 0.3);
 }
 
 header .sidebar {
@@ -154,16 +150,20 @@ header .sidebar ul {
 .wrapper .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 90%;
   margin: auto;
+}
+
+#experience {
+  min-height: 120vh;
 }
 
 #education,
 #skills,
 #interests,
 #awards {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .wrapper .container .content {
@@ -179,6 +179,7 @@ header .sidebar ul {
 #skills ul {
   display: flex;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 #skills #tools {
@@ -205,11 +206,8 @@ header .sidebar ul {
   color: #868e96 !important;
 }
 
-#skills #workflow li:before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  width: 1.3em;
+#skills #workflow li i {
+  margin-right: 1%;
 }
 
 .wrapper #awards p {
@@ -225,4 +223,11 @@ header .sidebar ul {
 #awards ul li i {
   color: #ffc107;
   margin-right: 1%;
+}
+
+
+
+#interests h1+p {
+  margin-top: 4%;
+  margin-bottom: 1rem;
 }
