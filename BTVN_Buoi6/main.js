@@ -30,13 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("scroll", event => {
     let x = array[0]
-    array.map(({elem, name, isLight}) => 
-      isInViewport(elem)?
-        x = {elem, name, isLight: true}
-      :
-        x = {elem, name, isLight: false}
-    )
+    let a = array.map(({elem, name, isLight}) => {
+      
+    })
+    console.log(a)
     let elemChange = document.getElementById(`${x.name}Side`);
     x.isLight ? elemChange.style.opacity = 1 : elemChange.style.opacity = 0.5;
   });
 });
+
+
+

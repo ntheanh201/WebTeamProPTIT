@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.parallax {
+    background-image: url("./assets/images/tadz.png");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+.less-height {
+    background-image: url('./assets/images/img1.jpg');
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-2 {
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100px;
+    align-items: center;
+}
+
+.content-2 p {
+    margin: 0;
+}
+
+.scroll-up {
+    background-image: url('./assets/images/img2.jpg');
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
