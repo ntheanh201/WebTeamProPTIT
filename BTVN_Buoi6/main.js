@@ -1,28 +1,42 @@
-//array.map
-let rectangles = [
-    {width: 10, height: 2},
-    {width: 2, height: 3},
-    {width: 3, height: 4}
-]
+document.addEventListener("DOMContentLoaded", () => {
+  const isInViewport = el => {
+    const scroll = window.scrollY || window.pageYOffset;
+    const boundsTop = el.getBoundingClientRect().top + scroll;
 
-let c = rectangles.map(({width, height}) => width*height)
-console.log(c)
-let arr = [1, 2, 3, 4];
-//array.find
-arr.find(() => {});
+    const viewport = {
+      top: scroll,
+      bottom: scroll + window.innerHeight
+    };
 
-//array.reduce
-let a = arr.reduce((x, y) => x + y);
+    const bounds = {
+      top: boundsTop,
+      bottom: boundsTop + el.clientHeight
+    };
 
-console.log(a);
-//gio hang
-var orders = [
-  { name: "a", quantity: 2, price: 100 },
-  { name: "b", quantity: 2, price: 100 },
-  { name: "c", quantity: 5, price: 15 },
-];
-//dung reduce de tinh tong cua don hang
+    return (
+      (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom) ||
+      (bounds.top <= viewport.bottom && bounds.top >= viewport.top)
+    );
+  };
 
-let b = orders.map(({price, quantity}) => price*quantity).reduce((price1, price2) => price1+price2)
+  const array = [
+    {elem: document.querySelector("#about"), name: 'about', isLight: false},
+    {elem: document.querySelector("#experience"), name: 'experience', isLight: false},
+    {elem: document.querySelector("#education"), name: 'education', isLight: false},
+    {elem: document.querySelector("#skills"), name: 'skills', isLight: false},
+    {elem: document.querySelector("#interests"), name: 'interests', isLight: false},
+    {elem: document.querySelector("#awards"), name: 'awards', isLight: false}
+  ]
 
-console.log(b)
+  document.addEventListener("scroll", event => {
+    let x = array[0]
+    array.map(({elem, name, isLight}) => 
+      isInViewport(elem)?
+        x = {elem, name, isLight: true}
+      :
+        x = {elem, name, isLight: false}
+    )
+    let elemChange = document.getElementById(`${x.name}Side`);
+    x.isLight ? elemChange.style.opacity = 1 : elemChange.style.opacity = 0.5;
+  });
+});

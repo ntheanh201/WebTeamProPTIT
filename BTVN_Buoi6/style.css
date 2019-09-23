@@ -40,12 +40,12 @@ header .sidebar {
 
 header .sidebar a {
   color: #ffffff;
-  opacity: 0.5;
   font-weight: bold;
+  opacity: 0.5;
 }
 
 header .sidebar a:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 header .sidebar ul {
