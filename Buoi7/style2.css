@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.text-1 {
+    background-image: url('./assets/images/tadz.png');
+    height: 90vh;
+    /* background-size: cover; */
+}
+
+.text-2 {
+    background-image: url('./assets/images/tadz.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-2 p {
+    font-size: 300%;
+}
