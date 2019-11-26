@@ -1,14 +1,33 @@
 <?php
-session_start();
-function insertAccount($username, $password)
+//model khong dung session
+
+include("../sqlVariables.php");
+
+function isExistAccount($username)
 {
     global $conn;
-    $sql = "INSERT INTO tblaccount(username, password) VALUES ('" . $username . "', '" . $password . "')";
+    $sql = "SELECT * FROM $ACCOUNT_TABLE_NAME WHERE username = '" . $username . "'";
     $val = $conn->query($sql);
-    if ($val == TRUE) {
-        echo header('Location: ../view/login.php');
+    if ($val->num_rows > 0) {
+        return true;
     } else {
-        echo header('Location: ../view/register.php');
+        return false;
+    }
+}
+
+function insertAccount($username, $password)
+{
+    if (!isExistAccount($username)) {
+        global $conn;
+        $sql = "INSERT INTO tblaccount(username, password) VALUES ('" . $username . "', '" . $password . "')";
+        $val = $conn->query($sql);
+        if ($val == TRUE) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
     }
 }
 
@@ -18,12 +37,9 @@ function checkAccount($username, $password)
     $sql = "SELECT * FROM tblaccount WHERE username = '" . $username . "' AND password = '" . $password . "'";
     $val = $conn->query($sql);
     if ($val->num_rows > 0) {
-        echo header('Location: ../view/index.php');
-        $_SESSION["login"] = true;
-        $_SESSION["username"] = $username;
+        return true;
     } else {
-        $message = "Wrong username or password";
-        echo "<script type='text/javascript'>alert('$message');</script>";
+        return false;
     }
 }
 

@@ -3,6 +3,11 @@ include('../controller/authController.php');
 if (!empty($user)) {
     echo header('Location: index.php');
 }
+if (isset($_SESSION["mess_login"])) {
+    echo '<p>' . $_SESSION["mess_login"] . '</p>';
+    unset($_SESSION["mess_login"]);
+}
+
 ?>
 
 <!DOCTYPE html>
