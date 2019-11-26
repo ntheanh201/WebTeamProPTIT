@@ -18,7 +18,7 @@ function checkAccount($username, $password)
     $sql = "SELECT * FROM tblaccount WHERE username = '" . $username . "' AND password = '" . $password . "'";
     $val = $conn->query($sql);
     if ($val->num_rows > 0) {
-        echo 'Login successfully!';
+        echo header('Location: ../view/index.php');
         $_SESSION["login"] = true;
         $_SESSION["username"] = $username;
     } else {
