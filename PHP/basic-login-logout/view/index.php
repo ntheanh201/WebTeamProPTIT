@@ -17,7 +17,7 @@ include('../controller/authController.php');
         echo '<a href="./login.php">Login</a> or <a href="./register.php">Register</a>';
     } else {
         echo "Welcome back $user
-            <br/> <a href='./logout.php'>Logout</a>";
+            <br/> <a href='../controller/logout.php'>Logout</a>";
     }
     ?>
 

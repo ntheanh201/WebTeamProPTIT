@@ -1,3 +1,10 @@
+<?php
+include('../controller/authController.php');
+if (!empty($user)) {
+    echo header('Location: index.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
